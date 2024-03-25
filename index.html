@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="shortcut icon"
+      href="/Login_Page/img/IMG_9578.JPG"
+      type="image/x-icon"
+    />
+    <title>Login-Page</title>
+  </head>
+  <body>
+    <div class="tamplate">
+      <div class="name">
+        <label for="name">Username:</label>
+        <input type="text" id="name" placeholder="Enter Username" />
+      </div>
+      <div class="pass">
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter password" />
+      </div>
+      <div class="loginbtn">
+        <button class="lbtn">Login</button>
+      </div>
+    </div>
+    <script>
+      let btn = document.querySelector(".lbtn");
+      btn.addEventListener("click", (e) => {
+        location.reload(true);
+      });
+    </script>
+  </body>
+</html>
